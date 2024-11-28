@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mambo's Bar & Restaurant - Kapparis, Cyprus</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#00A8B0',  // Teal blue color from the logo
+                        secondary: '#202020', // Dark gray for text
+                        accent: '#FFD700',   // Gold color for accents
+                        lightGray: '#f0f0f0',
+                    },
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans bg-gradient-to-br from-blue-900 via-blue-700 to-blue-500 text-white min-h-screen">
+    <header class="fixed w-full z-50 bg-white shadow-md">
+        <nav class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-3xl font-bold text-primary">Mambo's</a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#about" class="text-secondary hover:text-primary transition duration-300">About</a>
+                    <a href="#menu" class="text-secondary hover:text-primary transition duration-300">Menu</a>
+                    <a href="#gallery" class="text-secondary hover:text-primary transition duration-300">Gallery</a>
+                    <a href="#reviews" class="text-secondary hover:text-primary transition duration-300">Reviews</a>
+                    <a href="#contact" class="text-secondary hover:text-primary transition duration-300">Contact</a>
+                </div>
+                <button id="mobile-menu-button" class="md:hidden text-secondary focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div id="mobile-menu" class="md:hidden hidden mt-4">
+                <a href="#about" class="block py-2 text-secondary hover:text-primary transition duration-300">About</a>
+                <a href="#menu" class="block py-2 text-secondary hover:text-primary transition duration-300">Menu</a>
+                <a href="#gallery" class="block py-2 text-secondary hover:text-primary transition duration-300">Gallery</a>
+                <a href="#reviews" class="block py-2 text-secondary hover:text-primary transition duration-300">Reviews</a>
+                <a href="#contact" class="block py-2 text-secondary hover:text-primary transition duration-300">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="h-screen flex items-center justify-center relative overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img src="https://scontent.famd13-1.fna.fbcdn.net/v/t1.6435-9/104799258_130317792025166_3708152768019865975_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=0l0UnwPFKccQ7kNvgEcUuCP&_nc_zt=23&_nc_ht=scontent.famd13-1.fna&_nc_gid=ABrCZGEposBCixo2lyEaQ2Q&oh=00_AYBmDR6MzY6X5tC4yprQkLmkq-FXsOeAFEgQbLbtDBPdgQ&oe=676F9DCE" alt="Mambo's Restaurant" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black opacity-50"></div>
+            </div>
+            <div class="relative z-10 text-center text-white">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 text-white drop-shadow-lg">Mambo's</h1>
+                <p class="text-xl md:text-2xl mb-8">Mediterranean Magic Awaits</p>
+                <a href="#menu" class="bg-primary text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-opacity-90 transition duration-300 inline-block">Explore Our Menu</a>
+            </div>
+        </section>
+
+        <section id="about" class="py-20 bg-lightGray">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12 text-primary">Welcome to Mambo's</h2>
+                <div class="flex flex-col md:flex-row items-center justify-between">
+                    <div class="md:w-1/2 mb-8 md:mb-0">
+                        <img src="https://scontent.famd13-1.fna.fbcdn.net/v/t39.30808-6/425312259_893240286143851_469717708654098615_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=VxVBKGz39DEQ7kNvgHeHTqs&_nc_zt=23&_nc_ht=scontent.famd13-1.fna&_nc_gid=ASk4ViyNyumRbeh_0miTdFm&oh=00_AYC5tGR8mGA7jbgA8nhVLLdIrLIU61LK1RKG0DGh-I38NQ&oe=674E2DA1" alt="Mambo's Bar & Restaurant" class="rounded-lg shadow-md">
+                    </div>
+                    <div class="md:w-1/2 md:pl-12">
+                        <p class="text-secondary mb-6">Mambo's Bar & Restaurant, located in Kapparis, Cyprus, has been serving delicious Mediterranean cuisine since 1998. With over 200 glowing reviews and a 4.6-star rating, we are committed to offering an unforgettable dining experience.</p>
+                        <p class="text-secondary mb-6">Whether you're here for a romantic dinner, a fun night out with friends, or a family gathering, we guarantee an extraordinary experience with exceptional food and service.</p>
+                        <div class="flex items-center bg-white p-4 rounded-lg shadow-md">
+                            <span class="text-3xl font-bold text-primary mr-2">4.6</span>
+                            <div class="flex text-accent">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <a href="https://maps.app.goo.gl/Y5bDjwcyxhHgPNEX7" class="ml-2 text-secondary hover:text-primary transition duration-300">
+                                (206 reviews)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12 text-primary">Our Specialties</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Menu items (update images and text as needed) -->
+                    <div class="bg-lightGray rounded-lg shadow-md overflow-hidden">
+                        <img src="https://scontent.famd13-1.fna.fbcdn.net/v/t39.30808-6/425292907_893240129477200_7584803916591169730_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=FU-wPW5ZJT0Q7kNvgEz2E9-&_nc_zt=23&_nc_ht=scontent.famd13-1.fna&_nc_gid=ADog8ylVvdTzzhWhanYHiwr&oh=00_AYBXM8rGo2BLDdEKPLBaozZ5RPnXu2cw9eP-PLsUGmvBoA&oe=674DFC15" alt="Calamari" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2 text-primary">Calamari</h3>
+                            <p class="text-secondary">Crispy, tender calamari served with our signature dipping sauce.</p>
+                        </div>
+                    </div>
+                    <!-- Repeat for other menu items -->
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="py-20 bg-lightGray">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12 text-primary">Gallery</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <img src="https://scontent.famd13-1.fna.fbcdn.net/v/t39.30808-6/275618986_496439985412943_8069530287387351314_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=fS1WQ9Xz-6MQ7kNvgGs80qb&_nc_zt=23&_nc_ht=scontent.famd13-1.fna&_nc_gid=ARk8K8RhrqhGCc0-oBd_6FG&oh=00_AYD7HPNosnwvA3SltyYmb5yVLk0v9nMOXqgVBiuHcIDKYA&oe=674E28EA" alt="Interior" class="w-full h-48 object-cover rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <!-- Repeat for other images -->
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews" class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-12 text-primary">Customer Reviews</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="p-6 border rounded-lg shadow-md bg-lightGray hover:shadow-lg transition duration-300">
+                        <p class="text-secondary mb-4">"Mambo's is my go-to place in Kapparis! The food is incredible, and the atmosphere is perfect for any occasion. The staff is always friendly and welcoming!"</p>
+                        <span class="text-primary font-semibold">- George P.</span>
+                    </div>
+                    <!-- Repeat for other reviews -->
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 bg-lightGray">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-12 text-primary">Get in Touch</h2>
+                <p class="text-secondary mb-6">We'd love to hear from you! Whether you're planning an event, looking for information, or just want to say hello, reach out to us below.</p>
+                <form id="contact-form" class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-md">
+                    <div class="mb-6">
+                        <input type="text" name="name" placeholder="Your Name" class="w-full p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary mb-4" required>
+                        <input type="email" name="email" placeholder="Your Email" class="w-full p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary" required>
+                    </div>
+                    <textarea name="message" placeholder="Your Message" class="w-full p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary mb-4" rows="4" required></textarea>
+                    <button type="submit" class="w-full bg-primary text-white px-4 py-3 rounded-md font-semibold hover:bg-opacity-90 transition duration-300">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-secondary text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Mambo's Bar & Restaurant, Kapparis, Cyprus</p>
+            <div class="mt-4">
+                <a href="#" class="text-white hover:text-accent mx-2 transition duration-300">Facebook</a>
+                <a href="#" class="text-white hover:text-accent mx-2 transition duration-300">Instagram</a>
+                <a href="#" class="text-white hover:text-accent mx-2 transition duration-300">TripAdvisor</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Parallax effect for hero section
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.pageYOffset;
+            const heroSection = document.querySelector('#hero');
+            const heroImage = heroSection.querySelector('img');
+            heroImage.style.transform = `translateY(${scrollPosition * 0.5}px)`;
+        });
+
+        // Animate on scroll
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                if (elementTop < windowHeight * 0.75) {
+                    element.classList.add('animate-fade-in-up');
+                }
+            });
+        };
+
+        window.addEventListener('scroll', animateOnScroll);
+        animateOnScroll(); // Initial check on page load
+    </script>
+</body>
+</html>
+
